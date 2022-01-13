@@ -14,6 +14,7 @@ Sample text
 3. Tres
 ---
 `Inline code in block`
+
 # code block
-print 'eee'
-print 'method header'
+print '3 backticks or'
+print 'indent 4 spaces'
