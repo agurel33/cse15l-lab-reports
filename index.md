@@ -25,5 +25,5 @@ print 'indent 4 spaces'
 
 sample change
 
-![Image](Capture.PNG)
-![Image](images/Capture.PNG)
+![Image](lab2examples/Capture.PNG)
+![Image](lab2examples/images/Capture.PNG)
