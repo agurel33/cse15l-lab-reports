@@ -6,10 +6,10 @@
 
 ## Table of Contents
 
-1. [Installing VScode](#1-Installing-VScode)
-2. [Remotely Connecting](#2-Remotely-Connecting)
-3. [Trying Some Commands](#3-Trying-Some-Commands)
-4. [Moving Files with `scp`](#4-Moving-Files-with-`scp`)
+1. Installing VScode
+2. Remotely Connecting
+3. Trying Some Commands
+4. Moving Files with `scp`
 5. Setting an SSH Key
 6. Optimizing Remote Running
 
@@ -58,4 +58,30 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 * To log out of the remote server, you can use either Ctrl + D, or run the `exit` command.
 
 ## 4. Moving Files with `scp`
-
+* The next step in working remotely is being able to move files back and forth between your personal computer and the remote computer or server that you connect to.
+* The command to copy a file from your computer to the server is called `scp` and you will always run it from your client terminal (from your computer, not logged into `ieng6`).
+* Set up a sample file on your computer called `WhereAmI.java` and past the following into it:
+```
+class WhereAmI {
+  public static void main(String[] args) {
+    System.out.println(System.getProperty("os.name"));
+    System.out.println(System.getProperty("user.name"));
+    System.out.println(System.getProperty("user.home"));
+    System.out.println(System.getProperty("user.dir"));
+  }
+}
+```
+* Running this command on your own computer, using `javac` and `java`, will show you the file location on your computer.
+* On your computer terminal, run the command(using your personal username):
+```
+scp WhereAmI.java cs15lwi22acl@ieng6.ucsd.edu:~/
+```
+* You will be prompted for a password, and afterward when you log in with `ssh`, when you use `ls` you should see your file in your home directory.
+* As seen in the two screenshots below, compiling and running WhereAmI.java gives me a location on my personal computer and also a location through the ssh.
+**Personal:** <br>  
+![Image](images/where_personal.PNG)
+<br>
+**Through SSH:** <br>  
+![Image](images/where_ssh.PNG)
+* If you see something similar, you have successfully moved files onto the `ssh` directory using `scp`!
+## 5. Setting an SSH Key
