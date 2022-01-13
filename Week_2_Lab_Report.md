@@ -85,3 +85,43 @@ scp WhereAmI.java cs15lwi22acl@ieng6.ucsd.edu:~/
 ![Image](images/where_ssh.PNG)
 * If you see something similar, you have successfully moved files onto the `ssh` directory using `scp`!
 ## 5. Setting an SSH Key
+* Through using SSH keys, you can use `ssh` and `scp` with the remote server without having to input your password.
+* `ssh-keygen` creates a pair of keys, or files, called the public key and the private key. When the public key is copied onto a specific spot on the server while the private key is present on the client, the `ssh` command will use the pair of files to grant you access instead of requiring you to input your password.
+*Set it up on your client (personal computer) like this:
+```
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/joe/.ssh/id_rsa): /Users/joe/.ssh/id_rsa
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/joe/.ssh/id_rsa.
+Your public key has been saved in /Users/joe/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:jZaZH6fI8E2I1D35hnvGeBePQ4ELOf2Ge+G0XknoXp0 joe@Joes-Mac-mini.local
+The key's randomart image is:
++---[RSA 3072]----+
+|                 |
+|       . . + .   |
+|      . . B o .  |
+|     . . B * +.. |
+|      o S = *.B. |
+|       = = O.*.*+|
+|        + * *.BE+|
+|           +.+.o |
+|             ..  |
++----[SHA256]-----+
+```
+* However, if you are doing this process on Windows, you have to do an extra `ssh-add` step by clicking 
+[here](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation).
+* This process creates two new files `id_rsa` (private key) and `id_rsa.pub` (public key).
+* Now, you need to copy the public key (ending in .pub) to the .ssh directory on your account on the server.
+```
+$ ssh cs15lwi22acl@ieng6.ucsd.edu
+<Enter Password>
+$ mkdir .ssh
+$ <logout>
+$ scp /Users/arda/.ssh/id_rsa.pub cs15lwi22acl@ieng6.ucsd.edu:~/.ssh/authorized_keys
+```
+* After doing this, you should now be able to use `scp` and `ssh` without having to use your password, as seen below.
+![Image](images/ssh_key_success.PNG)
+## 6. Optimizing Remote Running
