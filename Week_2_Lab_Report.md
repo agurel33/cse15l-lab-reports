@@ -125,3 +125,15 @@ $ scp /Users/arda/.ssh/id_rsa.pub cs15lwi22acl@ieng6.ucsd.edu:~/.ssh/authorized_
 * After doing this, you should now be able to use `scp` and `ssh` without having to use your password, as seen below.
 ![Image](images/ssh_key_success.PNG)
 ## 6. Optimizing Remote Running
+To optimize remote running, you can use the following tips:
+* Write a command in quotes at the end of your `ssh` command in order to run it on the remote server and exit afterwards:
+```
+$ ssh cs15lwi22acl@ieng6.ucsd.edu "ls"
+```
+* You can also use semicolons in order to run multiple commands on the same line:
+```
+$ cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI
+```
+* To quickly recall the last command run, you can also use the up-arrow on your keyboard.
+* You can also use the `history` command in the terminal, as seen in the screenshot below:
+![Image](images/history.PNG)
