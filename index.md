@@ -13,7 +13,7 @@ Sample text
 2. Dos
 3. Tres
 ---
-'Inline code in block'
+`Inline code in block`
 # code block
 print 'eee'
 print 'method header'
