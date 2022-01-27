@@ -28,3 +28,4 @@ sample change
 ![Image](lab2examples/Capture.PNG)
 
 - [Lab 1 Report](/Week_2_Lab_Report.md)
+- [Lab 2 Report](/Week_4_Lab_Report.md)
