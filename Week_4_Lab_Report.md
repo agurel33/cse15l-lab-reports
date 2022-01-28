@@ -12,7 +12,7 @@ For this lab, given a very buggy template of MarkdownParse, we were supposed to 
 
 ## Code Change #1: Allowing for text after the links
 
-![Image](images/week4_github1.PNG)
+![Image](images/week4_github1.png)
 
 [Failure-Inducing Input](https://raw.githubusercontent.com/agurel33/markdown-parse/main/test-file2.md)
 
