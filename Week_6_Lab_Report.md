@@ -27,7 +27,7 @@ $ scp -r *.java *.md lib/ cs15lwi22@ieng6.ucsd.edu:markdown-parse
 
 ## Logging into ieng6 account, compiling and running the tests in repository
 
-![Image](images/lab_6_terminal_ls.png)
+![Image](images/lab_6_terminal.PNG)
 
 ![Image](images/lab_6_testing.png)
 
