@@ -1,31 +1,5 @@
-Sample text
-**Bold** **sample bolded text**
-*Italic* *sample italicized text*
-# Example Heading
-## smaller example heading
-[Link](www.youtube.com)
-![Image](https://image.shutterstock.com/image-vector/illustration-computer-monitor-holding-cpu-260nw-82095055.jpg)
-> Example Blockquote
+# Arda's Lab Reports!
 
-* Banana
-* Apple
-* Oranges
-
-1. Uno
-2. Dos
-3. Tres
----
-`Inline code in block`
-
-```
-# code block
-print '3 backticks or'
-print 'indent 4 spaces'
-```
-
-sample change
-
-![Image](lab2examples/Capture.PNG)
-
-- [Lab 1 Report](/Week_2_Lab_Report.md)
-- [Lab 2 Report](/Week_4_Lab_Report.md)
+- [Lab Report #1 Week 2](/Week_2_Lab_Report.md)
+- [Lab Report #2 Week 4](/Week_4_Lab_Report.md)
+- [Lab Report #3 Week 6](/Week_6_Lab_Report.md)

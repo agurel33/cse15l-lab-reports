@@ -1,4 +1,4 @@
-# Week 2 Lab Report
+# Lab Report #1 Week 2
 ## Introduction
 
 * This lab report is a tutorial on how to log into a course-specific account on UCSD's `ieng6`. 
