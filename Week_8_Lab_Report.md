@@ -103,10 +103,10 @@ And then there's more text
 
 **Result: FAILED**
 
-### **Reviewed Implementation**
-
 ![my result](images/lab_8_snip3_test1_fail.png)
 
+
+### **Reviewed Implementation**
 
 **Test:**
 
