@@ -17,15 +17,25 @@
 
 When inputted into the method `getLinks()`, this code should be producing an `ArrayList<String>` with the links `[google.com, google.com, ucsd.edu]`.
 
-### My Implementation
+### **My Implementation**
+
+**Test:**
 
 ![my test](images/lab_8_snip1_test1.png)
 
-Correspounding output for passed test, or specific part of Junit that shows failure
+**Result: FAILED** 
 
-### Reviewed Implementation
+![my result](images/lab_8_snip1_test1_fail.png)
 
-what should be produced, code for test in MarkdownParseTest.java, Correspounding output for passed test, or specific part of Junit that shows failure
+### **Reviewed Implementation**
+
+**Test:**
+
+![Review test](images/lab_8_snip1_test2.png)
+
+**Result: FAILED**
+
+![Review result](images/lab_8_snip1_test2_fail.png)
 
 ## Snippet 2
 ```
@@ -35,9 +45,28 @@ what should be produced, code for test in MarkdownParseTest.java, Correspounding
 
 [some escaped \[ brackets \]](example.com)
 ```
-### My Implementation
 
-### Reviewed Implementation
+When inputted into the method `getLinks()`, this code should be producing an `ArrayList<String>` with the links `[a.com, a.com(()), example.com]`.
+
+### **My Implementation**
+
+**Test:**
+
+![my test](images/lab_8_snip2_test1.png)
+
+**Result: FAILED**
+
+![my result](images/lab_8_snip2_test1_fail.png)
+
+### **Reviewed Implementation**
+
+**Test:**
+
+![review test](images/lab_8_snip2_test2.png)
+
+**Result: FAILED**
+
+![review result](images/lab_8_snip2_test2_fail.png)
 
 ## Snippet 3
 ```
@@ -66,9 +95,27 @@ And there's still some more text after that.
 
 And then there's more text
 ```
-### My Implementation
+### **My Implementation**
 
-### Reviewed Implementation
+**Test:**
+
+![my test](images/lab_8_snip3_test1.png)
+
+**Result: FAILED**
+
+### **Reviewed Implementation**
+
+![my result](images/lab_8_snip3_test1_fail.png)
+
+
+**Test:**
+
+![review test](images/lab_8_snip3_test2.png)
+
+
+**Result: FAILED**
+
+![review result](images/lab_8_snip3_test2_fail.png)
 
 ## Questions: 
 * Do you think there is a small (<10 lines) code change that will make your program work for snippet 1 and all related cases that use inline code with backticks? If yes, describe the code change. If not, describe why it would be a more involved change.
