@@ -121,11 +121,14 @@ And then there's more text
 * Do you think there is a small (<10 lines) code change that will make your program work for snippet 1 and all related cases that use inline code with backticks? If yes, describe the code change. If not, describe why it would be a more involved change.
 
 **My Answer:**
+Yes, I think that I could make my program work for snippet 1 with a small code change. I just need to include a check using an if statement to find backticks for inline code using the method indexOf(), and check to see the placement of those backticks using nested if statements. If the first backtick is in front of the open bracket, then everything until the second backtick would be seen as inline code and thus not as a link, and we would have currentIndex jump to 1 + the index of the second backtick.
 
 * Do you think there is a small (<10 lines) code change that will make your program work for snippet 2 and all related cases that nest parentheses, brackets, and escaped brackets? If yes, describe the code change. If not, describe why it would be a more involved change.
 
 **My Answer:**
+I think that I could make a small code change to make my program work and compatible with escaped brackets. However, I think I would need more than 10 lines, or make a big code change, to check for nested links, paranthesis, and brackets. After finding the initial pairing of open and close brackets or parentheses, there would have to be an if statement checking if there is another set of those elements within it, and if there is, save that inside to be a link, and skip until the end of the link.
 
 * Do you think there is a small (<10 lines) code change that will make your program work for snippet 3 and all related cases that have newlines in brackets and parentheses? If yes, describe the code change. If not, describe why it would be a more involved change.
 
 **My Answer:**
+I don't think that I could make a small code change to allow my program to work for snippet 3 because the program would need to use more if statements in order to check the syntax and placement of the brackets and parentheses, and there are a lot of cases that this program would have to check for in order to not include the wrong links. Also, my line-break check (for `\n`) in my current code would have it that none of these links are actually valid because there are new lines in between the brackets and in between the parentheses, but however, my preview for snippet 3 shows that these are still valid links that should be included in the parse.
