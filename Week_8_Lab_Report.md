@@ -15,7 +15,9 @@
 [`code]`](ucsd.edu)
 ```
 
-When inputted into the method `getLinks()`, this code should be producing an `ArrayList<String>` with the links `[google.com, google.com, ucsd.edu]`.
+Expected Outcome (according to CommonMarkDemo): ``[`google.com, google.com, ucsd.edu]``
+
+![image](images/lab_8_snip1_commonMark.png)
 
 ### **My Implementation**
 
@@ -46,7 +48,9 @@ When inputted into the method `getLinks()`, this code should be producing an `Ar
 [some escaped \[ brackets \]](example.com)
 ```
 
-When inputted into the method `getLinks()`, this code should be producing an `ArrayList<String>` with the links `[a.com, a.com(()), example.com]`.
+Expected Outcome (according to CommonMarkDemo): `[a.com, a.com(()), example.com]`
+
+![image](images/lab_8_snip2_commonMark.png)
 
 ### **My Implementation**
 
@@ -95,6 +99,11 @@ And there's still some more text after that.
 
 And then there's more text
 ```
+
+Expected Outcome (according to CommonMarkDemo): `[https://ucsd-cse15l-w22.github.io/]`
+
+![image](images/lab_8_snip3_commonMark.png)
+
 ### **My Implementation**
 
 **Test:**
@@ -131,4 +140,4 @@ I think that I could make a small code change to make my program work and compat
 * Do you think there is a small (<10 lines) code change that will make your program work for snippet 3 and all related cases that have newlines in brackets and parentheses? If yes, describe the code change. If not, describe why it would be a more involved change.
 
 **My Answer:**
-I don't think that I could make a small code change to allow my program to work for snippet 3 because the program would need to use more if statements in order to check the syntax and placement of the brackets and parentheses, and there are a lot of cases that this program would have to check for in order to not include the wrong links. Also, my line-break check (for `\n`) in my current code would have it that none of these links are actually valid because there are new lines in between the brackets and in between the parentheses, but however, my preview for snippet 3 shows that these are still valid links that should be included in the parse.
+I don't think that I could make a small code change to allow my program to work for snippet 3 because the program would need to use more if statements in order to check the syntax and placement of the brackets and parentheses, and there are a lot of cases that this program would have to check for in order to not include the wrong links. Also, my line-break check (for `\n`) in my current code would have it that none of these links are actually valid because there are new lines in between the brackets and in between the parentheses, but however, my preview for snippet 3 shows that the link for the CSE15l website should be valid.
