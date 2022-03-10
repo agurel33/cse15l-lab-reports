@@ -53,4 +53,6 @@ Provided implementation output: []
 * Neither implementation is correct because the expected link output, when you click on foo, is supposed to be "/url1", but my implementation states that "not a link" would be the link, and the provided implementation states that there is no link at all.
 
 ### Describe the bug and what code should be fixed?
-* type here
+* The bug in my implementation is that while foo is the word present on the page to click as a link, using "[foo]: /url1" sets foo's link address to /url1 instead of "not a link". Essentially, in my code, I would have to implement and add another check for square brackets and a colon following the end bracket and check if there is a link/address after that colon to see if the original link changes at all.
+
+![image](images/lab_10_test2_bug_ss.png)
