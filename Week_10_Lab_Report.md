@@ -26,7 +26,7 @@ Provided implentation output: [\(foo\)]
 ### Describe the bug and what code should be fixed?
 * For my implementation, the bug present is that the backslashes should not be present in the link output, and they should instead make the parenthesis that come after them be able to be included in the link instead of ending the link early (nested parenthesis with only parenthesis present and no backslashes in link).
 
-**My Implementation (Missing Check for Backslash "\"):**
+**My Implementation (Missing Check for Backslash):**
 
 ![image](images/lab_10_test1_bug_ss.png)
 
